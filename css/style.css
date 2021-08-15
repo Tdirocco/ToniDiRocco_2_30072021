@@ -2,6 +2,7 @@
 /* general */
 
 body{
+    /* background-color:bisque; */
     font-family: 'Raleway', sans-serif;
     color: #181818;
     margin: 0;
@@ -9,13 +10,35 @@ body{
 }
 
 #content{
-    min-height: 1600px;
+    /* background-color:cadetblue; */
+    min-height: 1660px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
-    align-content: space-between;
     padding: 0 50px 0 50px;
     }
+
+header{
+    /* background-color:aquamarine; */
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main{
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+footer{
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+ }
+
+
 
 a{
     color: #181818;
@@ -52,14 +75,12 @@ h3{
     box-shadow: 5px 5px 10px rgba(88, 88, 88, 0.13);
 }
 
-/* position des blocks Desktop */
+/* Organisation du header */
 
-header{
-    /* background-color:aquamarine; */
+#chapeau{
     width: 100%;
-    padding-left: 5px;    
-    margin: 0;
     display: grid;
+    margin-bottom: 30px;
     grid-template-columns: 97px 1fr 122px;
 }
 
@@ -67,14 +88,16 @@ nav{
     /* background-color:rgba(98, 2, 252, 0.205); */
     width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    margin-left: 50px;
     padding: 0 5px 0 5px;
 }
 
-main{
+#accomodations{
+    background-color:darkgoldenrod;
     position: relative;
     width: 59%;
-    min-width: 800px;
+    min-width: 795px;
     height: 570px;
     background-color:#f2f2f2;
     border-radius: 20px;
@@ -85,29 +108,24 @@ main{
 
 aside{
     width: 25%;
-    min-width: 340px;
+    min-width: 330px;
+    height: 620px;
     background-color:#f2f2f2;
     border-radius: 20px;
     margin: 0;
     padding: 0 40px 0 40px;
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
 }
 
-section{
-    /* background-color: rgba(98, 2, 252, 0.445); */
+/*
+ section{
+    background-color: rgba(98, 2, 252, 0.445);
     width: 100%;
     display: flex;
     margin-bottom: 50px;
 }
-
-footer{
-    background-color: #f2f2f2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 50px;
-}
+*/
 
 /* organisation du header */
 
@@ -116,7 +134,7 @@ footer{
     width: 95px;
     margin-left: 2px;
     object-fit:contain;
-    padding-top:40px;
+    padding-top:30px;
 }
 
 #menu{
@@ -131,7 +149,7 @@ footer{
 }
 
 #inscription{
-    padding: 50px 23px 0 28px;
+    padding: 40px 23px 0 28px;
 }
 
 #inscription a{
@@ -141,29 +159,34 @@ footer{
 
 #inscription a:hover{
     transition: 0.2s;
-    font-size: 18px;
-}
-
-#menu a:hover{
-    transition: 0.2s;
-    font-size:18px;
-    border-top: 2px solid;
+    text-decoration: underline;
 }
 
 a[id="hebergements"]{
+    width: 155px;
+    height: 78px;
+    box-sizing: border-box;
     color: #0065FC;
     margin: 0;
     align-items: bottom;
-    padding: 50px 23px 0 28px;
+    padding: 40px 23px 0 28px;
     border-top: 2px solid #0065FC;
 }
 
 a[id="activites"]{
+    border-top: 2px solid rgba(0, 0,0,0);
+    box-sizing: border-box;
     margin: 0;
-    align-items: bottom;
-    padding: 50px 23px 0 28px;
+    padding: 40px 23px 0 28px;
 }
 
+#menu a:hover{
+    border-top: 2px solid #0065FC;
+    box-sizing: border-box;
+    transition: 0.2s;
+    text-decoration: underline;
+    color: #0065FC;
+}
 
 
 /* organisation du nav */
@@ -230,6 +253,7 @@ a[id="activites"]{
 }
 
 #btnSearch:hover{
+    color:#0065FC;
     background-color: #DEEBFF;
     border-color: #DEEBFF;;
 }
@@ -244,6 +268,10 @@ a[id="activites"]{
     font-size: 12px;
     justify-content: left;
     align-items: center;
+}
+
+#filtres h2{
+    margin:0;
 }
 
 .choixFiltres{
@@ -384,8 +412,9 @@ main a:hover{
     margin-top: 30px;
 }
 
-.more:hover{
+.more a:hover{
     color: #0065FC;
+    text-decoration: underline;
 }
 
 #galerie1 .card-v:hover{
@@ -398,14 +427,17 @@ main a:hover{
 
 .entete-aside{
     width: 340px;
+    height: 84px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .entete-aside i{
+    margin-top: 20px;
     font-size: x-large;
 }
+
 
 #galerie2{
     min-height: 490px;
@@ -624,8 +656,8 @@ footer h3{
 }
 
 footer a:hover{
-    font-size: 1.2em;
     color: #0065FC;
+    text-decoration: underline;
     transition: 0.2s;
 }
 
