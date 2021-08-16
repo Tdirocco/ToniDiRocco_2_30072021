@@ -287,18 +287,18 @@ nav a:hover{
     padding: 5px;
 }
     
-    .infoLogo{
-        display: flex;
-        color: #0065FC;
-        height: 24px;
-        width: 24px;
-        border: 1px solid #DEEBFF;
-        border-radius: 12px;
-        justify-content: center;
-        align-items: center;
-        margin-right: 15px;
-        font-size: 15px;
-    }
+.infoLogo{
+    display: flex;
+    color: #0065FC;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #DEEBFF;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 15px;
+}
 
     /* organisation du main */
 
@@ -433,16 +433,17 @@ aside{
     align-content: space-between;
 }
 
-#galerie2 a{
+/* #galerie2 a{
     display:block;
-    width: 340px;
-    height: 140px;
+    width: 330px;
+    height: 130px;
     flex-grow: 1;
-}
+} */
 
 .card-h{
     background-color:white;
     display: flex;
+    flex-flow: column wrap;
     width: 330px;
     height: 130px;
     border-radius: 15px;
@@ -454,7 +455,8 @@ aside{
     background-color:rosybrown;
     width: 130px;
     height: 130px;
-    margin-right: 20px;
+    border-radius: 10px 0 0 10px;
+    /* margin-right: 20px; */
 }
 
 .imageCard-h img{
@@ -471,7 +473,8 @@ aside{
     /* background-color:silver; */
     margin: 0;
     padding: 0;
-    width: 140px;
+    width: 180px;
+    height: 130px;
     display: flex;
     flex-flow: column wrap;
 }
@@ -649,8 +652,9 @@ footer a:hover{
 @media screen and (max-width: 550px){
 
 #content{
-    background-color:bisque;
+    /* background-color:bisque; */
     width: 100%;
+    min-width: 375px;
     margin: 0;
     padding: 0;
 }
@@ -814,16 +818,179 @@ nav a:hover{
 
 /* Modification du main */
 
-    /* accomodation */
+    /* aside */
+
+aside{
+    order: 0;
+    width: 100%;
+    height: 580px;
+    border-radius: 0;
+    padding: 0;
+}
+
+.entete-aside{
+    margin: 0 auto;
+    padding: 40px 20px 20px 20px;
+    width: 335px;
+    height: 30px;
+}
+
+.entete-aside h2{
+    padding: 0;
+    margin: 0;
+}
+
+.entete-aside i{
+    margin-top: 0;
+}
+
+#galerie2{
+    width: 335px;
+    height: 455px;
+    min-height: 455px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+#galerie2 a{
+    position: relative;
+    width: 335px;
+    height: 140px;
+}
+
+.card-h{
+    width: 325px;
+    margin: 0;
+}
+
+
+    /* Accomodation */
+
+#accomodations{
+    order: 1;
+    width: 100%;
+    min-width: 335px;
+    min-height: 1410px;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#accomodations h2{
+    width: 335px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+#galerie1{
+    width: 335px;
+    min-width: 335px;
+    min-height: 1252px;
+    margin: 0 auto;
+    flex-flow: column wrap;
+    align-content: stretch;
+}
+
+.card-v{
+    width: 325px;
+    height: 185px;
+}
+
+.imageCard img{
+    width: 325px;
+    height: 110px;
+}
+
+.more{
+    width: 335px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+    /* activities */    
+
+#activities{
+    order: 2;
+    margin: 0;
+    padding:0;
+    height: 1400px;
+}
+
+#activities h2{
+    width: 335px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+#galerie3{
+    width: 335px;
+    height: 1260px;
+    margin: 0 auto;
+}
+
+.card{
+    width: 335px;
+    height: 190px;
+}
+
+#activities img{
+    height: 133px;
+}
+
+.infoCard{
+    height: 35px;
+}
+
+#activities p{
+    height: 30px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.card1{
+    width: 335px;
+    height: 190px;
+}
+
+.card2{
+    width: 335px;
+    height: 190px;
+}
+
+.card3{
+    width: 335px;
+    height: 190px;
+}
+
+.card4{
+    width: 335px;
+    height: 190px;
+}
 
 
 
+/* Modification du Footer */
 
+footer{
+    padding: 0;
+    padding-bottom: 30px; 
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+}
 
-
-
-
-
+#a_propos, #nos_hebergements, #Assistance{
+    width: 335px;
+    padding: 30px 20px 0 20px;
+    margin: 0 auto;
+}
 
 }
 
