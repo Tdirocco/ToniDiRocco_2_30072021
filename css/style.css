@@ -232,7 +232,12 @@ nav a:hover{
 #filtres h2{
     margin:0;
 }
-    
+
+.selectionFiltre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .choixFiltres{
     display: flex;
     height: 46px;
@@ -340,9 +345,14 @@ nav a:hover{
     padding: 5px;
 }
 
-.imageCard img{
+.imageCard{
     width: 236px;
     height: 115px;
+}
+
+.imageCard img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 12px 12px 0 0;
 }
@@ -433,17 +443,14 @@ aside{
     align-content: space-between;
 }
 
-/* #galerie2 a{
-    display:block;
-    width: 330px;
-    height: 130px;
-    flex-grow: 1;
-} */
+#galerie2 a{
+    display: flex;
+}
 
 .card-h{
     background-color:white;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     width: 330px;
     height: 130px;
     border-radius: 15px;
@@ -461,8 +468,8 @@ aside{
 
 .imageCard-h img{
     display: block;
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     object-fit: cover;
@@ -471,9 +478,9 @@ aside{
 
 .infoCard-h{
     /* background-color:silver; */
-    margin: 0;
+    margin-left: 10px;
     padding: 0;
-    width: 180px;
+    width: 198px;
     height: 130px;
     display: flex;
     flex-flow: column wrap;
@@ -986,7 +993,7 @@ footer{
     flex-flow: column wrap;
 }
 
-#a_propos, #nos_hebergements, #Assistance{
+#a_propos, #nos_hebergements, #assistance{
     width: 335px;
     padding: 30px 20px 0 20px;
     margin: 0 auto;
