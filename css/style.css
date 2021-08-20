@@ -7,11 +7,13 @@ body{
     color: #181818;
     margin: 0;
     padding: 0;
+    min-width: 375px;
 }
 
 #content{
     /* background-color:cadetblue; */
     min-height: 1660px;
+    min-width: 375px;
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px 0 50px;
@@ -656,7 +658,7 @@ footer a:hover{
 }
 
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 480px){
 
 #content{
     /* background-color:bisque; */
@@ -736,7 +738,7 @@ nav a:hover{
 }
 
 #banniere{
-    background-color:darkturquoise;
+    /* background-color:darkturquoise; */
     width: auto;
     margin: 0;
     padding: 0;
@@ -745,7 +747,7 @@ nav a:hover{
 }
 
 #annonce{
-    background-color:deeppink;
+    /* background-color:deeppink; */
     padding: 0;
     margin: 35px 20px 10px 20px;
     display: block;
@@ -757,12 +759,20 @@ nav a:hover{
 }
 
 #filtres{
-    min-height: 270px;
+    min-height: 220px;
     padding: 0;
     margin: 5px auto 0 20px;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.selectionFiltre{
+    min-height: 150px;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 340px;
+    height: 180px;
 }
 
 .choixFiltres{
@@ -820,7 +830,7 @@ nav a:hover{
 }
 
 .infoLogo{
-    align-self: start;
+flex-shrink: 0;
 }
 
 /* Modification du main */
