@@ -25,6 +25,7 @@
 
 h1, h2{
     font-size: 1.38rem;
+    font-weight: 700;
 }
 
 h3{
@@ -39,14 +40,21 @@ strong{
     font-size: inherit;
 }
 
+.rate{
+    margin-top: 0.38rem;
+    display: flex;
+    justify-content: space-between;
+    width: 4.5rem;
+}
+
 .fa-star{
     color: var(--Gris-etoile);
-    font-size: 0.72rem;
+    font-size: 0.73rem;
 }
 
 .checked{
     color: var(--Bleu-dur);
-    font-size: 0.78rem;
+    font-size: 0.72rem;
 }
 
 .ombrePortee{
@@ -128,7 +136,7 @@ nav a:hover{
 } 
 
 #inscription a{
-    font-weight: bold;
+    font-weight: 600;
     color: var(--Bleu-dur);
 }
 
@@ -182,7 +190,7 @@ nav a:hover{
 
 #maRecherche::placeholder{
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--Black);
 }
 
@@ -190,6 +198,7 @@ nav a:hover{
     cursor: pointer;
     padding: 0.63rem;
     font-size: 1.1rem;
+    font-weight: 600;
     color: var(--White);
     background-color: var(--Bleu-dur);
     border: 0.06rem solid var(--Bleu-dur);
@@ -267,6 +276,7 @@ nav a:hover{
 .labelFiltre{
     margin-left: 0.63rem;
     font-size: 1.13rem;
+    font-weight: 600;
 }
 
 #info{
@@ -360,7 +370,7 @@ nav a:hover{
 .more{
     margin-top: 2.50rem;
     font-size: 1.13rem;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .more a:hover{
@@ -561,11 +571,13 @@ aside{
 
 footer h3{
     font-size: 1.1rem;
+    font-weight: 600;
     margin-bottom: 0.88rem;
 }
 
 li{
-    margin-bottom: 0.75rem; 
+    margin-bottom: 0.75rem;
+    font-weight: 400; 
 }
 
 footer a:hover{
@@ -829,6 +841,10 @@ footer{
 #inscription{
     padding: 0.94rem 1.25rem 0 0;
     justify-self: right;
+}
+
+#inscription a{
+    font-weight: 700;
 }
 
 nav{
