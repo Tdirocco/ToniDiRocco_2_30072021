@@ -798,25 +798,40 @@ aside{
     /* Mise en forme du Footer */
 
 footer{
+    padding: var(--padding-general) 2rem;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 #a_propos, #nos_hebergements, #assistance{
     width: 30%;
-    min-width: 16rem;
+    min-width: 14.66rem;
     margin: 0.38rem 0;
 }
 
+#nos_hebergements{
+    padding-left: 1.45rem;
+}
 }
 
 
 @media screen and (max-width: 480px){
 
+h1{
+    font-size: 1.44rem;
+    font-weight: 600;
+}
+
+h2{
+    font-weight: 600;
+}
+
+
 #content{
     min-width: 22.44rem;
-    padding: 1.75rem 0;
+    padding: 1rem 0;
 }
 
 
@@ -827,6 +842,7 @@ footer{
 
 #chapeau{
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 0.45rem;
 }
 
 #logo{
@@ -835,6 +851,7 @@ footer{
 }
 
 #logo img{
+    width: 6rem;
     padding: 0;
 }
 
@@ -845,6 +862,7 @@ footer{
 
 #inscription a{
     font-weight: 700;
+    font-size: 1rem;
 }
 
 nav{
@@ -856,8 +874,9 @@ nav{
 
 nav a{
     border-bottom: 0.19rem solid var(--Gris-fond);
-    padding: 1.6rem 0 0.81rem 0;
+    padding: 1.45rem 0 0.8rem 0;
     text-align: center;
+    font-size: 1rem;
 }
 
 a[id="hebergements"]{
@@ -885,7 +904,14 @@ nav a:hover{
     margin: 0 auto;
     padding: 0 1.25rem;
 }
+
+#annonce{
+    margin-top: 1.94rem;
+}
+
  #annonce p{
+     font-weight: 300;
+     font-size: 1.05rem;
      margin-top: 0.75rem;
      margin-bottom: 2.19rem;
  }
@@ -1058,7 +1084,7 @@ aside{
     /* Mise en Forme du Footer */
 
 footer{
-    padding: 2.75rem 1.25rem 1.1rem 1.25rem;
+    padding: 2.75rem 1.25rem 1.75rem 1.25rem;
     display: flex;
     flex-flow: column wrap;
 }
